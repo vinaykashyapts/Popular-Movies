@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Udacity Nanodegree</string>
+    <string name="action_about">About</string>
+
+    <string-array name="projectTitles">
+        <item>Popular Movies, Stage 1</item>
+        <item>Popular Movies, Stage 2</item>
+        <item>Super Duo!</item>
+        <item>Build it bigger</item>
+        <item>Make your app material</item>
+        <item>Go Ubiquitous!</item>
+        <item>Capstone, Stage 1 - Design</item>
+        <item>Capstone, Stage 2 - Build</item>
+    </string-array>
+
+    <string-array name="projectDescription">
+        <item>An app to help users discover popular and recent movies</item>
+        <item>More features for each movies</item>
+        <item>Productionize two apps, taking them from a functional state to a production-ready state</item>
+        <item>A joke-telling app</item>
+        <item>Update look and feel to meet Material Design specifications</item>
+        <item>Watch face for sunshine app</item>
+        <item>Design and plan an app idea of our own</item>
+        <item>Execution of approved design</item>
+    </string-array>
+    <string name="title_activity_about">About</string>
+    <string name="project">Project \u0020</string>
+    <string name="projectToast">\u0020 will be launched from here</string>
+    <string name="about">App built as part of Udacity\'s Android Developer Nanodegree program.</string>
+    <string name="studentDetails">Student Details</string>
+    <string name="studentName">Vinay Kashyap</string>
+    <string name="studentEmail">vinaykashyapts@gmail.com</string>
+    <string name="studentLinkedin">https://goo.gl/RFWDps</string>
+</resources>
