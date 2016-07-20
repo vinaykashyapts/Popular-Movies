@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="color_primary">#ff6600</color>
+    <color name="color_accent">#ff944d</color>
+    <color name="color_primary_dark">#e65c00</color>
+
     <color name="app_theme">#ff6600</color>
     <color name="app_theme_light">#ff944d</color>
     <color name="app_theme_dark">#e65c00</color>

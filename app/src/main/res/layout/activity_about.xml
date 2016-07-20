@@ -12,37 +12,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/about"
-        android:textSize="16sp"/>
+        android:textSize="@dimen/title1"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/studentDetails"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
+        android:textSize="@dimen/title1"
+        android:layout_marginTop="@dimen/space3"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/studentName"
-        android:textSize="16sp"
-        android:layout_marginTop="5dp"/>
+        android:textSize="@dimen/title1"
+        android:layout_marginTop="@dimen/space4"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/studentEmail"
-        android:textSize="16sp"
-        android:layout_marginTop="5dp"
+        android:textSize="@dimen/title1"
+        android:layout_marginTop="@dimen/space4"
         android:autoLink="email"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/studentLinkedin"
-        android:textSize="16sp"
-        android:layout_marginTop="5dp"
+        android:textSize="@dimen/title1"
+        android:layout_marginTop="@dimen/space4"
         android:autoLink="web"/>
 
 </LinearLayout>

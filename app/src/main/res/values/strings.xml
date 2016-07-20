@@ -31,4 +31,18 @@
     <string name="studentName">Vinay Kashyap</string>
     <string name="studentEmail">vinaykashyapts@gmail.com</string>
     <string name="studentLinkedin">https://goo.gl/RFWDps</string>
+
+    <string name="movies">Movies</string>
+    <string name="action_movie_popular">Popular</string>
+    <string name="action_movie_top_rated">Top Rated</string>
+
+    <string name="releaseDate">RELEASE DATE</string>
+    <string name="originalTitle">ORIGINAL TITLE</string>
+    <string name="userRating">USER RATING</string>
+    <string name="synopsis">SYNOPSIS</string>
+
+    <string name="noInternet">Please check your internet and try again.</string>
+
+    <!-- API Key Obtained from https://www.themoviedb.org/ needs to be updated here -->
+    <string name="moviesDbApiKey">723af7ed068ef056bd237b15c39e1f94</string>
 </resources>

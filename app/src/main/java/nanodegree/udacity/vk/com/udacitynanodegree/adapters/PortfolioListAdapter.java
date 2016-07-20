@@ -1,6 +1,7 @@
 package nanodegree.udacity.vk.com.udacitynanodegree.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,9 +16,10 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import nanodegree.udacity.vk.com.udacitynanodegree.R;
+import nanodegree.udacity.vk.com.udacitynanodegree.activities.MoviesListActivity;
 
 /**
- * Created by cropin on 3/2/16.
+ * Created by Vinay on 3/2/16.
  */
 public class PortfolioListAdapter extends RecyclerView.Adapter<PortfolioListAdapter.PortfolioViewHolder> {
 
@@ -65,7 +67,12 @@ public class PortfolioListAdapter extends RecyclerView.Adapter<PortfolioListAdap
 
         @Override
         public void onClick(View v) {
-            Toast.makeText(context, projectTitles.get(getAdapterPosition()) + context.getString(R.string.projectToast), Toast.LENGTH_SHORT).show();
+
+            if(getAdapterPosition() == 0) {
+                context.startActivity(new Intent(context, MoviesListActivity.class));
+             } else {
+                Toast.makeText(context, projectTitles.get(getAdapterPosition()) + context.getString(R.string.projectToast), Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }
