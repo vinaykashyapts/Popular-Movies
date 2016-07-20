@@ -44,5 +44,5 @@
     <string name="noInternet">Please check your internet and try again.</string>
 
     <!-- API Key Obtained from https://www.themoviedb.org/ needs to be updated here -->
-    <string name="moviesDbApiKey">723af7ed068ef056bd237b15c39e1f94</string>
+    <string name="moviesDbApiKey"></string>
 </resources>
