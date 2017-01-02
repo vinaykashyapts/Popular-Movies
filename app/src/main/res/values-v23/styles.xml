@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="AppBaseTheme">
+                <!-- darker variant for the status bar and contextual app bars-->
+                <item name="android:colorPrimaryDark">@color/color_primary_dark</item>
+                <item name="android:colorPrimary">@color/color_primary</item>
+                <item name="android:colorAccent">@color/color_accent</item>
+                <item name="android:colorControlNormal">@color/white</item>
+                <item name="android:actionMenuTextColor">@color/black</item>
+                <!-- remove shadow below action bar -->
+                <item name="android:elevation">1dp</item>
+                <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+                <item name="android:statusBarColor">@color/color_primary</item>
+                <item name="android:windowLightStatusBar">false</item>
+                <item name="android:navigationBarColor">@color/black</item>
+        </style>
+</resources>

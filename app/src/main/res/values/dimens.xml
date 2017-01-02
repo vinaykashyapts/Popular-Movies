@@ -15,7 +15,7 @@
     <dimen name="title3">12sp</dimen>
     <dimen name="title4">18sp</dimen>
 
-    <!-- Text dimens -->
+    <!-- View dimens -->
     <dimen name="space0">0dp</dimen>
     <dimen name="space1">20dp</dimen>
     <dimen name="space2">15dp</dimen>

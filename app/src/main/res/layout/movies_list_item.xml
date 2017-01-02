@@ -28,6 +28,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/gradient_foreground_partly_filled"></View>
+
+            <ImageView
+                android:id="@+id/isFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite"
+                android:layout_gravity="bottom|right"
+                android:padding="@dimen/space4"
+                android:visibility="gone"/>
         </FrameLayout>
 
         <LinearLayout

@@ -4,8 +4,15 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- darker variant for the status bar and contextual app bars-->
         <item name="android:colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="android:colorPrimary">@color/color_primary</item>
+        <item name="android:colorAccent">@color/color_accent</item>
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/black</item>
         <!-- remove shadow below action bar -->
         <item name="android:elevation">1dp</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:navigationBarColor">@color/black</item>
     </style>
 
     <style name="CardViewStyle" parent="android:Widget.TextView">
@@ -14,5 +21,20 @@
         <item name="cardElevation">@dimen/card_elevation</item>
         <item name="cardPreventCornerOverlap">false</item>
         <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- app branding color for the app bar -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="actionMenuTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorPrimaryDark">@color/app_theme_dark</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:colorForeground">@color/white</item>
     </style>
 </resources>

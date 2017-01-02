@@ -35,6 +35,7 @@
     <string name="movies">Movies</string>
     <string name="action_movie_popular">Popular</string>
     <string name="action_movie_top_rated">Top Rated</string>
+    <string name="action_movie_favourite">Favourite</string>
 
     <string name="releaseDate">RELEASE DATE</string>
     <string name="originalTitle">ORIGINAL TITLE</string>
@@ -42,6 +43,15 @@
     <string name="synopsis">SYNOPSIS</string>
 
     <string name="noInternet">Please check your internet and try again.</string>
+
+    <string name="fetchFailure">Unable to fetch data.</string>
+    <string name="noResults">No results</string>
+    <string name="offline"> - (Offline)</string>
+
+    <string name="movieReviews">Reviews</string>
+    <string name="movieTrailers">Trailers</string>
+
+    <string name="readMore">Read More</string>
 
     <!-- API Key Obtained from https://www.themoviedb.org/ needs to be updated here -->
     <string name="moviesDbApiKey"></string>
