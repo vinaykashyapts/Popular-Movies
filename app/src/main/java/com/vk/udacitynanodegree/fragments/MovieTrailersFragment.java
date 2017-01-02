@@ -46,7 +46,7 @@ public class MovieTrailersFragment extends Fragment {
     @Bind(R.id.trailersEmptyData)
     TextView trailersEmptyData;
 
-    private MovieTrailers trailers;
+    public MovieTrailers trailers;
 
     public MovieTrailersFragment() {
 

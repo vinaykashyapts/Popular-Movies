@@ -5,6 +5,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,8 +19,10 @@ import com.vk.udacitynanodegree.R;
 import com.vk.udacitynanodegree.fragments.MovieReviewsFragment;
 import com.vk.udacitynanodegree.fragments.MovieTrailersFragment;
 import com.vk.udacitynanodegree.models.MovieItem;
+import com.vk.udacitynanodegree.models.MovieTrailers;
 import com.vk.udacitynanodegree.network.RestAPI;
 import com.vk.udacitynanodegree.utils.Constants;
+import com.vk.udacitynanodegree.utils.Utils;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -50,6 +54,7 @@ public class MoviesDetailOfflineActivity extends AppCompatActivity implements Vi
     LinearLayout trailersContainer;
     @Bind(R.id.reviewsContainer)
     LinearLayout reviewsContainer;
+    private MenuItem mMenuItemShare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,10 +87,24 @@ public class MoviesDetailOfflineActivity extends AppCompatActivity implements Vi
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_movie_detail, menu);
+        mMenuItemShare = menu.findItem(R.id.menu_share);
+        return true;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
+                return true;
+            case R.id.menu_share:
+                if(Utils.isNetworkAvailable(MoviesDetailOfflineActivity.this)) {
+                    MovieTrailersFragment fragment = (MovieTrailersFragment) getSupportFragmentManager().findFragmentByTag(MovieTrailersFragment.class.getSimpleName());
+                    if(fragment != null && fragment.trailers != null && fragment.trailers.getResults() != null)
+                        Utils.shareTrailer(MoviesDetailOfflineActivity.this, fragment.trailers.getResults().get(0));
+                }
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
