@@ -95,7 +95,7 @@ public class MovieReviewsFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                showEmptyData(getString(R.string.fetchFailure));
+                if(getActivity() != null) showEmptyData(getString(R.string.fetchFailure));
             }
         });
 
@@ -115,7 +115,7 @@ public class MovieReviewsFragment extends Fragment {
         reviewsView.setLayoutManager(linearLayoutManager);
         MovieReviewsAdapter reviewsAdapter = new MovieReviewsAdapter(getActivity(), reviews);
         reviewsView.setAdapter(reviewsAdapter);
-        if(reviews.getResults().size() == 0)
+        if(reviews.getResults().size() == 0 && getActivity() != null)
             showEmptyData(getString(R.string.noResults));
     }
 

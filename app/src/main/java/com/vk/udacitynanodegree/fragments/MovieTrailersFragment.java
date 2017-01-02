@@ -96,7 +96,7 @@ public class MovieTrailersFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                showEmptyData(getString(R.string.fetchFailure));
+                if(getActivity() != null) showEmptyData(getString(R.string.fetchFailure));
             }
         });
 
@@ -116,7 +116,7 @@ public class MovieTrailersFragment extends Fragment {
         trailersView.setLayoutManager(linearLayoutManager);
         MovieTrailersAdapter trailersAdapter = new MovieTrailersAdapter(trailers);
         trailersView.setAdapter(trailersAdapter);
-        if(trailers.getResults().size() == 0)
+        if(trailers.getResults().size() == 0 && getActivity() != null)
             showEmptyData(getString(R.string.noResults));
     }
 
